@@ -18,4 +18,13 @@ Mkdir backup
 Cp *.py backup 
 15. cd ../
 Rm docs/documentation.md
-16. 
+16. git add . && commit -m "Updates project files"
+17. Touch .gitignore
+18. Echo "temp/" >> .gitignore
+echo "dataset0?.csv" >> .gitignore
+20.git add .gitignore && git commit -m "Add .gitignore file"
+git push origin feature-update
+21. git checkout main 
+23. Git push origin main
+24. Git branch -d feature-update
+25. Git push origin --delete feature-origin
